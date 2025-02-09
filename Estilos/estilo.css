@@ -5,34 +5,18 @@
   padding: 0;
   font-family: "Tahoma" sans-serif;
 }
-
-div {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-}
-p {
-  margin: 10px auto;
-  width: 980px;
-  text-align: justify;
-  font-size: 18px;
-  line-height: 28px;
-}
 span {
   font-weight: bold;
 }
 .texto-azul {
   color: #1d80c1;
 }
-.texto-amarelo {
-  color: #fff81b;
-}
 /*Área Cabeçalho com Menu*/
 header {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 .cabecalho {
   display: flex;
@@ -67,13 +51,23 @@ nav a:hover {
   font-weight: bold;
 }
 #menu-hamburguer {
-    display: none;
+  display: none;
 }
 /*Área Principal*/
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+main h1 {
+  font-size: 1.9em;
+  text-align: center;
+}
+main h2 {
+  font-size: 1.4em;
+  color: #1c81c0;
+  text-align: center;
 }
 figure {
   display: flex;
@@ -83,17 +77,28 @@ figure {
 }
 figure img {
   width: 100%;
-  
 }
-.secao2 {
-  margin-top: 50px;
-  padding-top: 0px;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.2em;
+}
+#servicos {
+  border: 1px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1em;
+}
+ul > li {
+  color: brown;
+  text-decoration: none;
 }
 /*3ª Seção*/
-.secao3 h1 {
-  color: #1d1d1d;
-  margin-bottom: 5px;
-}
 .secao3 h2 {
   color: #1c81c0;
   margin-top: 0px;
@@ -109,9 +114,6 @@ figure img {
   line-height: 42px;
 }
 .secao4 p {
-  width: 700px;
-  text-align: center;
-  color: #ffffff;
   font-size: 22px;
   line-height: 42px;
 }
@@ -179,10 +181,10 @@ figure img {
     font-size: 0.8em;
   }
 }
-@media (max-width: 400px){
-    #menu-hamburguer{
-        display: none;
-    }
+@media (max-width: 400px) {
+  #menu-hamburguer {
+    display: none;
+  }
 }
 @media (max-width: 400px) {
   .cabecalho img {
@@ -190,8 +192,7 @@ figure img {
   }
 }
 @media (max-width: 400px) {
-    figure img {
-        height: 210px;
-    }
+  figure img {
+    height: 210px;
+  }
 }
-
