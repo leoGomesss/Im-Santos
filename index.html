@@ -23,7 +23,7 @@
           alt="Logo da Imobiliaria"
           title="Imobiliaria Santos"
         />
-        <span class="material-symbols-outlined" id="menu-hamburguer">menu</span>
+        <span class="material-symbols-outlined" id="menu-hamburguer" onclick="clickMenu()">menu</span>
         <nav id="imenu">
           <a href="index.html">Sobre</a>
           <a href="#servicos">Serviços</a>
@@ -62,8 +62,8 @@
           ponte entre as partes interessadas.
         </p>
       </section>
-      <h2>Serviços</h2>
       <section id="servicos">
+        <h2 id="servicos-titulo">Serviços</h2>
         <p>
           Contamos com diversos
           <span class="texto-amarelo">serviços imobiliários</span> e também
@@ -79,7 +79,6 @@
             <li>Parcerias</li>
           </ul>
       </section>
-
       </div>
       <h2>Corretores</h2>
       <figure class="imagem-secundaria">
@@ -98,10 +97,11 @@
         frameborder="0"
       ></iframe>
     </main>
+    <!--Inicio Rodapé-->
     <footer>
       <p>
         Se ficou interessado em nos conhecer ou se tiver dúvidas entre em
-        <span class="texto-azul">contato</span> conosco através de um dos
+        <span class="texto-vermelho">contato</span> conosco através de um dos
         telefones abaixo:
       </p>
       <ul>
@@ -110,6 +110,19 @@
         <li><a href="#">Meier</a></li>
       </ul>
     </footer>
+    <!--Fim Rodapé-->
+    <!--#######-->
+    <!--Área Script (JS)-->
     </div>
+        <script>
+          function clickMenu() {
+            if (imenu.style.display == "block") {
+              imenu.style.display = "none"
+            }
+            else {
+              imenu.style.display = "block"
+            }
+          }
+        </script>
   </body>
 </html>
