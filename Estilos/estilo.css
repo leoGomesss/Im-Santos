@@ -51,6 +51,7 @@ figure .imagem-secundaria {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .imagem-secundaria img {
   display: flex;
@@ -67,6 +68,7 @@ header {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .cabecalho {
   display: flex;
@@ -143,6 +145,7 @@ section {
 #servicos {
   display: flex;
   flex-direction: column;
+  width: 100%;
   background-color: #111;
   color: #fff;
 }
@@ -159,12 +162,12 @@ iframe {
 footer {
   display: flex;
   flex-direction: column;
+  width: 100%;
   background-color: #111;
   color: #191970;
   background-color: #fbec5d;
   margin-top: 10px;
   text-align: center;
-  border: 1px solid red;
 }
 footer li,
 a {
@@ -239,25 +242,5 @@ a {
 @media (max-width: 480px) {
   #imenu {
     display: none;
-  }
-}
-/*Tela até 600px*/
-@media (min-width: 768px) {
-  #imagem-principal {
-    display: flex;
-    width: 100%;
-    margin: 7px auto;
-  }
-}
-@media (min-width: 768px) {
-  .cabecalho-img {
-    display: flex;
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .imagem-secundaria img {
-    display: flex;
-    width: 100%;
   }
 }
