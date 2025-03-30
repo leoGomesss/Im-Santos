@@ -208,7 +208,7 @@ a {
     display: block;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 310px) {
   #imenu {
     display: none;
   }
